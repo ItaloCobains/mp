@@ -1,0 +1,131 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mp' - runAll",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mp",
+                    "--package=mp",
+                ],
+                "filter": {
+                    "name": "mp",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "runAll",
+                // "https://github.com/DesignLiquido/liquido"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mp' - rinstall",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mp",
+                    "--package=mp",
+                ],
+                "filter": {
+                    "name": "mp",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "rinstall",
+                // "https://github.com/DesignLiquido/liquido"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mp' - list",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mp",
+                    "--package=mp",
+                ],
+                "filter": {
+                    "name": "mp",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "list",
+                // "https://github.com/DesignLiquido/liquido"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mp' - add",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mp",
+                    "--package=mp",
+                ],
+                "filter": {
+                    "name": "mp",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "add",
+                "https://github.com/DesignLiquido/liquido"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mp' - init",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mp",
+                    "--package=mp",
+                ],
+                "filter": {
+                    "name": "mp",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "init"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'mp'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=mp",
+                    "--package=mp"
+                ],
+                "filter": {
+                    "name": "mp",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
